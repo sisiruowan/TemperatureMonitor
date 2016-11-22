@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>数据结果</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    {% for templog in latest_templog_list %}
+    	<li>
+    		<p>序号：{{ forloop.counter }}\t时间：{{ templog.recv_time }}\t温度：{{ templog.temperature }}</p>
+    	</li>
+    {% endfor %}
+    <a href="{% url 'dataDisplay:input' user.id %}"></a>
+</body>
+</html>
