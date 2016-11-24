@@ -29,7 +29,7 @@ def addData(request, userid, source):
 	if source == 'web':
 		return HttpResponseRedirect(reverse('dataDisplay:result',args=(user.id,)))
 	else:
-		return HttpResponse(u'收到wifi数据')
+		return HttpResponse(u'get wifi data')
 #显示数据结果的页面
 def result(request, userid):
 	user = get_object_or_404(User, pk=userid)
