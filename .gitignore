@@ -1,0 +1,11 @@
+model
+log
+venv
+*.pyc
+nohup.out
+*.txt
+*.kv
+*.lda_model
+*.tar
+data
+sftp-config.json

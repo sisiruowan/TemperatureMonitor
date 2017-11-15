@@ -25,7 +25,7 @@ SECRET_KEY = '-o(oslyt7a)ia6k)(jv03m_pqb7x3#&5nt*-cua1g!0g&zx^20'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'192.168.1.103',u'localhost']
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'TempMonitor',
         'USER':'root',
-        'PASSWORD':'password',
+        'PASSWORD':'root',
         'HOST':'',
         'PORT':'3306',
     }
